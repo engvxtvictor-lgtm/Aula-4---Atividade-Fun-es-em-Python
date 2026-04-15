@@ -1,0 +1,31 @@
+# Exercício 1
+def dias_de_vida(idade):
+    return idade * 365
+
+
+# Exercício 2
+def aplicar_desconto(valor, porcentagem):
+    desconto = valor * (porcentagem / 100)
+    return valor - desconto
+
+
+# Exercício 3
+def e_par(numero):
+    return numero % 2 == 0
+
+
+# Exercício 4
+def situacao_aluno(n1, n2, n3):
+    media = (n1 + n2 + n3) / 3
+    
+    if media >= 7:
+        status = "Aprovado"
+    else:
+        status = "Reprovado"
+    
+    return media, status  # desafio extra atendido
+
+
+# Exercício 5
+def gerar_email(nome, sobrenome):
+    return f"{nome.lower()}.{sobrenome.lower()}@escola.com"
